@@ -1,0 +1,29 @@
+.topbar {
+  border-top: 4px solid $primary_color;
+  background-color: #f7f7f7;
+  height: 50px;
+  @include cleafix;
+  ul {
+    float: left;
+    padding-left: 0px;
+    li {
+      display: inline-block;
+      padding: 10px 5px;
+      color: $text_color;
+    }
+  }
+
+  .social_link {
+    float: right;
+    ul {
+      li {
+        a {
+          color: $text_color;
+          &:hover {
+            color: $primary_color;
+          }
+        }
+      }
+    }
+  }
+}
